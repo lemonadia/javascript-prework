@@ -52,18 +52,18 @@ function displayResult(argPlayerMove, argComputerMove) {
   }
   if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
     printMessage('Wygrywasz!');
-  } else {
-    printMessage('Przegrywasz :(');
+  //} else {
+  //  printMessage('Przegrywasz :(');
   }
   if (argPlayerMove == 'nożyce' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
-  } else {
-    printMessage('Przegrywasz :(');
+  //} else {
+  //  printMessage('Przegrywasz :(');
   }
   if (argPlayerMove == argComputerMove) {
     printMessage('Remis!');
-  } else {
-    printMessage('Przegrywasz :(');
+  //} else {
+  //  printMessage('Przegrywasz :(');
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
