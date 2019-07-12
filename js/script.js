@@ -1,4 +1,6 @@
 
+'use strict';
+
 const buttonRock = document.getElementById('button-rock');
 
 const buttonPaper = document.getElementById('button-paper');
@@ -10,13 +12,13 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-  playerMove = argButtonName;
+  const playerMove = argButtonName;
   console.log('ruch gracza to: ' + playerMove);
 
   const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
 
-  computerMove = getMoveName(randomNumber);
+  const computerMove = getMoveName(randomNumber);
   console.log('ruch komputera to: ' + computerMove);
 
   displayResult(playerMove, computerMove);
@@ -26,6 +28,7 @@ function buttonClicked(argButtonName) {
 /**
  * Ruch gracza i ruch komputera
  */
+
 
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
